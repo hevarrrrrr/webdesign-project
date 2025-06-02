@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teams - Kurdish League</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Basic Reset */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+   
+
+  
+   
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      margin: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.5s ease, box-shadow 0.3s ease;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      transform-style: preserve-3d;
+    }
+
+    li:hover {
+      transform: rotateY(360deg);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    /* 3D Effect for the container */
+    li img {
+      width: 80px; /* Adjust logo size */
+      height: auto;
+      transition: transform 0.5s ease;
+    }
+
+    li:hover img {
+      transform: scale(1.2);
+    }
+
+    /* Add 3D rotation effect */
+    @keyframes rotateLogo {
+      0% {
+        transform: rotateY(0deg);
+      }
+      50% {
+        transform: rotateY(180deg);
+      }
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kurdish League</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="standings.html">Standings</a>
+      <a href="teams.html">Teams</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Teams</h2>
+
+    <ul>
+      <li>
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/3f/Erbil_Sports_Club_Badge.png" alt="Erbil SC Logo">
+        <span>Erbil SC</span>
+      </li>
+      <li>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Sulaymaniya_SC_logo.png/250px-Sulaymaniya_SC_logo.png" alt="Sulaymaniya FC Logo">
+        <span>Sulaymaniya FC</span>
+      </li>
+      <li>
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Zakho_FC_logo.png" alt="Zakho FC Logo">
+        <span>Zakho FC</span>
+      </li>
+      <li>
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/cb/Duhok_SC_logo_%282023%29.png" alt="Duhok SC Logo">
+        <span>Duhok SC</span>
+      </li>
+      <li>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Newroz_Sports_Club_Logo.svg/1200px-Newroz_Sports_Club_Logo.svg.png" alt="Newroz SC Logo">
+        <span>Newroz SC</span>
+      </li>
+      <li>
+        <img src="https://static.flashscore.com/res/image/data/Ob9uLtN4-WvCxpJrn.png" alt="Peshmerga SC Logo">
+        <span>Peshmerga SC</span>
+      </li>
+      <li>
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/89/Serwan.png" alt="Sirwani Nwe SC Logo">
+        <span>Sirwani Nwe</span>
+      </li>
+      <li>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWtnp7MOF80mfc-isFv4BIk0Hofxa4pvBxFA&s" alt="Handren FC Logo">
+        <span>Handren FC</span>
+      </li>
+      <li>
+        <img src="https://upload.wikimedia.org/wikipedia/ckb/thumb/d/df/Fcl20221110_192132_124.png/250px-Fcl20221110_192132_124.png" alt="Ranya FC Logo">
+        <span>Ranya FC</span>
+      </li>
+      <li>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnzHwfdhTglWAc3v0v5WdnD4F3GqyGJaN5LA&s" alt="Koya SC Logo">
+        <span>Koya SC</span>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kurdish League</p>
+  </footer>
+  
+</body>
+</html>
